@@ -5,6 +5,20 @@ Created by: Lucas Mallmann
 Property: https://web.dev/badging-api/, https://github.com/w3c/badging/blob/master/explainer.md#usage-examples, https://wicg.github.io/background-sync/spec/
 Tags: Study, Work
 
+- [Badge Notification API](#seo-alura)
+  - [Overview](#overview)
+  - [Objetivos](#objetivos)
+  - [Suporte](#suporte)
+  - [Badge x Notificações](#badge-x-notificações)
+  - [Exemplo](#exemplo)
+    - [Display do _Badge_](#display-do-badge)
+    - [Source Code](#source-code)
+  - [Service Workers](#service-workers)
+    - [Background updates](#background-updates)
+      - [O problema do Push](#o-problema-do-push)
+    - [Periodic Background Sync API](#periodic-background-sync-api)
+  - [Combinação de Background Sync & Push API](#combinação-de-background-sync-&-push-api)
+
 # Overview
 
 As _Notification Badge API_ é uma API da plataforma dos browsers é uma Api da Plataforme Web que aplica pequenos indicadores nas páginas, ou nas aplicações instaladas. Existem 2 tipos de indicadores:
@@ -129,8 +143,8 @@ Em alguns casos, a numeração da notificação pode ser representada de maneira
 
 Chamar a API de um service worker tem algumas diferenças:
 
-- `**navigator.setClientBadge()**` - não deve ser chamado de service workers ou precisa de um argumento Client para especificar qual documento deve ser identificado.
-- `**navigator.setAppBadge()**` - quando é chamado via _service worker_, ele marca todos os aplicativos cujo escopo está dentro do escopo do _service worker_.
+- `navigator.setClientBadge()` - não deve ser chamado de service workers ou precisa de um argumento Client para especificar qual documento deve ser identificado.
+- `navigator.setAppBadge()` - quando é chamado via _service worker_, ele marca todos os aplicativos cujo escopo está dentro do escopo do _service worker_.
 
 ## Background updates
 
