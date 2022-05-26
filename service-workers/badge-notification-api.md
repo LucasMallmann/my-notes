@@ -5,7 +5,7 @@ Created by: Lucas Mallmann
 Property: https://web.dev/badging-api/, https://github.com/w3c/badging/blob/master/explainer.md#usage-examples, https://wicg.github.io/background-sync/spec/
 Tags: Study, Work
 
-- [Badge Notification API](#seo-alura)
+- [Badge Notification API](#)
   - [Overview](#overview)
   - [Objetivos](#objetivos)
   - [Suporte](#suporte)
